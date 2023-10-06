@@ -1,0 +1,71 @@
+body {
+  margin: 0px;
+}
+
+section {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left site of the WebSide */
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left img {
+  /* Image sizer n' centerer*/
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+
+/* Light side of the force */
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right img{
+  height: 2vw;
+  width: auto;
+}
+
+.right a {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 3vw;
+  margin-left: 3vw;
+  text-decoration: underline;
+  color: blue;
+}
+
+.right a:hover {
+  cursor: pointer;
+}
+
+.link{
+  text-align:center;
+}
+
+/* Baka mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #323232;
+    color: #fefefe;
+  }
+
+  a {
+    color: #5fa9ee;
+  }
+
+  .left img {
+    content: url(../images/dmLogo.png);
+  }
+}
