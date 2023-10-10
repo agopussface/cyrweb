@@ -69,3 +69,20 @@ section {
     content: url(../images/dmLogo.png);
   }
 }
+
+/* Responsive */
+@media screen and (orientation: portrait) {
+  section{
+    display: inline;
+  }
+
+  .right a {
+    font-size: 7vw;
+  }
+
+  .right img {
+    height: 4vw;
+    width: auto;
+  }
+  
+}
