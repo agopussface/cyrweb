@@ -3,9 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/css/style.css" />
 
-    <title>myWeb</title>
+    <!-- Feuilles de styles
+      style.css
+      snapChange.js
+    -->
+    <link rel="stylesheet" href="../style/css/style.css" />
+    <script src="../style/js/snapChange.js"></script>
+
+    <!-- Titre et description du site -->
+    <title>CyrWeb</title>
+    <link rel="icon" type="image/x-icon" href="../style/images/dmLogo.png">
     <meta name="description" content="Site web portfolio de Cyril Narducci">
   </head>
 
@@ -13,33 +21,41 @@
     <header></header>
 
     <section>
+      <!-- Affichage a gauche -->
       <div class="left">
+        <!-- Logo principal -->
         <div class="logo">
-          <img id="logo" src="../style/images/lmLogo.png"/>
+          <img id="logo" src="../style/images/lmLogo.png" />
         </div>
       </div>
+
+      <!-- Affichage à droite -->
       <div class="right">
+        <!-- LinkTree -->
         <div class="link">
+          <!-- Line 1 -->
           <a href="https://www.instagram.com/cyril.ndcci/" target="_blank"><img
               src="../style/images/insta.png" />INSTAGRAM</a>
           <a
             href="https://www.linkedin.com/in/cyril-narducci-8aa816224/"
             target="_blank"><img src="../style/images/lkdn.png" />LINKEDIN</a>
           <br />
+          <!-- Line 2 -->
           <a href target="_blank"><img src="../style/images/readme.png" />README.TXT</a>
-          <a onclick="getElementById('logo').src='../style/images/snapcode.png'"><img
-              src="../style/images/snap.png" />SNAPCHAT</a>
+          <a href="#" id="changeLogo"><img src="../style/images/snap.png" />SNAPCHAT</a>
           <br />
+          <!-- Line 3 -->
           <a
             href="https://open.spotify.com/playlist/0OW7gVwu4gDuFT3HaVD6Ps?si=edda716ce9a34401"
             target="_blank"><img src="../style/images/spotify.png" />PLAYLIST</a>
           <a href="project.html" target="_blank"><img
               src="../style/images/web.png" />PROJECT</a>
           <br />
-          <a href="../storage/docs/CV.pdf" target="_blank"><img src="../style/images/cv.png" />CV</a>
+          <!-- Line 4 -->
+          <a href="../storage/docs/CV.pdf" target="_blank"><img
+              src="../style/images/cv.png" />CV</a>
           <a href="https://pcpartpicker.com/list/jNVQ6D" target="_blank"><img
               src="../style/images/pc.png" />CONFIG</a>
-
         </div>
       </div>
     </section>
