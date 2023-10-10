@@ -17,7 +17,7 @@ section {
 
 .left img {
   /* Image sizer n' centerer*/
-  max-width: 80%;
+  width: 60vh;
   height: auto;
   display: block;
   margin: auto;
@@ -78,6 +78,10 @@ section {
 
   .right a {
     font-size: 7vw;
+  }
+
+  .left img {
+    padding: 0.5rem;
   }
 
   .right img {
