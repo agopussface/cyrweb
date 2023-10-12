@@ -35,12 +35,23 @@
           <a
             href="https://www.linkedin.com/in/cyril-narducci-8aa816224/"
             target="_blank"><img src="../style/images/lkdn.png" />LINKEDIN</a>
-            <a href="../storage/docs/CV.pdf" target="_blank"><img
+          <a href="../storage/docs/CV.pdf" target="_blank"><img
               src="../style/images/cv.png" />CV</a>
           <br />
           <!-- Line 2 -->
           <a href target="_blank"><img src="../style/images/readme.png" />README.TXT</a>
-          <a href="#" id="changeLogo" onclick="document.getElementById('logo').src = '../style/images/dog.png'"><img src="../style/images/dogicon.png" />FICELLE</a>
+          <a href="#" id="changeLogo"><img src="../style/images/dogicon.png" />FICELLE</a>
+
+          <script>
+            // Récupérez l'élément "changeLogo" par son ID
+            var changeLogoButton = document.getElementById('changeLogo');
+          
+            // Ajoutez un gestionnaire d'événements pour le clic sur le bouton
+            changeLogoButton.addEventListener('click', function() {
+              // Changez la source de l'image "logo" lorsque le bouton est cliqué
+              document.getElementById('logo').src = '../style/images/dog.png';
+            });
+          </script>
           <br />
           <!-- Line 3 -->
           <a
