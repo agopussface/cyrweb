@@ -35,37 +35,17 @@
           <a
             href="https://www.linkedin.com/in/cyril-narducci-8aa816224/"
             target="_blank"><img src="../style/images/lkdn.png" />LINKEDIN</a>
-          <a href="../storage/docs/CV.pdf" target="_blank"><img
+            <a href="../storage/docs/CV.pdf" target="_blank"><img
               src="../style/images/cv.png" />CV</a>
           <br />
           <!-- Line 2 -->
           <a href target="_blank"><img src="../style/images/readme.png" />README.TXT</a>
-          <a href="#" id="changeLogo"><img src="../style/images/dogicon.png" />FICELLE</a>
-
-<script>
-  var changeLogoButton = document.getElementById('changeLogo');
-
-  changeLogoButton.addEventListener('click', function(event) {
-    event.preventDefault(); // Empêche le lien de naviguer vers une autre page
-    changeImage();
-  });
-
-  changeLogoButton.addEventListener('touchstart', function(event) {
-    event.preventDefault(); // Empêche le lien de naviguer vers une autre page
-    changeImage();
-  });
-
-  function changeImage() {
-    var logoElement = document.getElementById('logo');
-    if (logoElement) {
-      logoElement.src = '../style/images/dog.png';
-    }
-  }
-</script>
-
-
-          
-          
+          <a href="#" id="changeLogo" onclick="logoChange()"><img src="../style/images/dogicon.png" />FICELLE</a>
+          <script>
+            function logoChange(){
+              document.getElementById('logo').src = '../style/images/dog.png';
+            }
+          </script>
           <br />
           <!-- Line 3 -->
           <a
