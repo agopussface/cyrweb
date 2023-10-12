@@ -40,16 +40,21 @@
           <br />
           <!-- Line 2 -->
           <a href target="_blank"><img src="../style/images/readme.png" />README.TXT</a>
-         <a href="#" id="changeLogo" onclick="changeImage()"><img src="../style/images/dogicon.png" />FICELLE</a>
+          <a href="#" id="changeLogo" onclick="changeImage()">FICELLE</a>
 
-          <script>
-            function changeImage() {
-              var logoElement = document.getElementById('logo');
-              if (logoElement) {
-                logoElement.src = '../style/images/dog.png';
-              }
-            }
-          </script>
+<script>
+  function changeImage() {
+    var logoElement = document.getElementById('logo');
+    if (logoElement) {
+      logoElement.src = '../style/images/dog.png';
+    }
+  }
+
+  var changeLogoButton = document.getElementById('changeLogo');
+  changeLogoButton.addEventListener('touchend', changeImage);
+</script>
+
+          
           
           <br />
           <!-- Line 3 -->
