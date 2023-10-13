@@ -45,14 +45,18 @@
           <a href target="_blank"
             ><img src="../style/images/readme.png" />README.TXT</a
           >
-          <a onclick='logoChange()'
-            ><img src="../style/images/dogicon.png" />FICELLE</a
-          >
-          <script>
+          <a href="javascript:void(0);" onclick='logoChange();'>
+            <img id="logo" src="../style/images/dogicon.png" alt="Image de chien" />
+            FICELLE
+        </a>
+    
+        <script>
             function logoChange() {
-              document.getElementById("logo").src = "../style/images/dog.png";
+                var logo = document.getElementById('logo');
+                logo.src = '../style/images/dog.png';
             }
-          </script>
+        </script>
+    
 
           <br />
           <!-- Line 3 -->
