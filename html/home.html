@@ -1,74 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Feuilles de styles
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Feuilles de styles
       style.css
     -->
-    <link rel="stylesheet" href="../style/css/style.css" />
+  <link rel="stylesheet" href="../style/css/style.css" />
 
-    <!-- Titre et description du site -->
-    <title>CyrWeb</title>
-    <link rel="icon" type="image/x-icon" href="../style/images/dmLogo.png" />
-    <meta name="description" content="Site web portfolio de Cyril Narducci" />
-  </head>
+  <!-- Titre et description du site -->
+  <title>CyrWeb</title>
+  <link rel="icon" type="image/x-icon" href="../style/images/dmLogo.png" />
+  <meta name="description" content="Site web portfolio de Cyril Narducci" />
+</head>
 
-  <body>
-    <header></header>
+<body>
+  <header></header>
 
-    <section>
-      <!-- Affichage a gauche -->
-      <div class="left">
-        <!-- Logo principal -->
-        <div class="logo">
-          <img id="logo" src="../style/images/lmLogo.png" />
-        </div>
+  <section>
+    <!-- Affichage a gauche -->
+    <div class="left">
+      <!-- Logo principal -->
+      <div class="logo">
+        <img class="logoChange" src="../style/images/dog.png" />
       </div>
+    </div>
 
-      <!-- Affichage à droite -->
-      <div class="right">
-        <!-- LinkTree -->
-        <div class="link">
-          <!-- Line 1 -->
-          <a
-            href="https://www.linkedin.com/in/cyril-narducci-8aa816224/"
-            target="_blank"
-            ><img src="../style/images/lkdn.png" />LINKEDIN</a
-          >
-          <a href="../storage/docs/CV.pdf" target="_blank"
-            ><img src="../style/images/cv.png" />CV</a
-          >
-          <br />
-          <!-- Line 2 -->
-          <a href target="_blank"
-            ><img src="../style/images/readme.png" />README.TXT</a
-          >
-          <a onclick='logoChange()'
-            ><img src="../style/images/dogicon.png" />FICELLE</a
-          >
-          <script>
-            function logoChange() {
-              document.getElementById("logo").src = "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg";
-            }
-          </script>
+    <!-- Affichage à droite -->
+    <div class="right">
+      <!-- LinkTree -->
+      <div class="link">
+        <!-- Line 1 -->
+        <a href="https://www.linkedin.com/in/cyril-narducci-8aa816224/" target="_blank"><img
+            src="../style/images/lkdn.png" />LINKEDIN</a>
+        <a href="../storage/docs/CV.pdf" target="_blank"><img src="../style/images/cv.png" />CV</a>
+        <br />
+        <!-- Line 2 -->
+        <a href target="_blank"><img src="../style/images/readme.png" />README.TXT</a>
+        <a onclick='logoChange()'><img src="../style/images/dogicon.png" />FICELLE</a>
+        <script>
+          function logoChange() {
+            var myImg = document.querySelector('.logoChange');
+            myImg.classList.remove('logoChange');
+            
+          }
+        </script>
+        
 
-          <br />
-          <!-- Line 3 -->
-          <a
-            href="https://open.spotify.com/playlist/0OW7gVwu4gDuFT3HaVD6Ps?si=edda716ce9a34401"
-            target="_blank"
-            ><img src="../style/images/spotify.png" />PLAYLIST</a
-          >
-          <a href="project.html" target="_blank"
-            ><img src="../style/images/web.png" />PROJECT</a
-          >
-          <br />
-        </div>
+        <br />
+        <!-- Line 3 -->
+        <a href="https://open.spotify.com/playlist/0OW7gVwu4gDuFT3HaVD6Ps?si=edda716ce9a34401" target="_blank"><img
+            src="../style/images/spotify.png" />PLAYLIST</a>
+        <a href="project.html" target="_blank"><img src="../style/images/web.png" />PROJECT</a>
+        <br />
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer></footer>
-  </body>
+  <footer></footer>
+</body>
+
 </html>

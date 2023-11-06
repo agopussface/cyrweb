@@ -65,8 +65,14 @@ section {
     color: #5fa9ee;
   }
 
-  .left img {
+  .logoChange {
     content: url(../images/dmLogo.png);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .logoChange {
+    content: url(../images/lmLogo.png);
   }
 }
 
@@ -90,3 +96,5 @@ section {
   }
   
 }
+
+
